@@ -6,10 +6,22 @@
 //
 
 import UIKit
+import KakaoSDKAuth
+import NaverThirdPartyLogin
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        if let url = URLContexts.first?.url {
+            if (AuthApi.isKakaoTalkLoginUrl(url)) {
+                _ = AuthController.handleOpenUrl(url: url)
+            }
+        }
+        
+        NaverThirdPartyLoginConnection.getSharedInstance()?.receiveAccessToken(URLContexts.first?.url)
+    }
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -17,6 +29,40 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        Switcher.updateRootVC()
+//        checkPush()
+        
+//        for fontFamily in UIFont.familyNames {
+//            for fontName in UIFont.fontNames(forFamilyName: fontFamily) {
+//                print(fontName)
+//            }
+//        }
+    }
+    
+    func checkPush() {
+        
+        if let tbc = self.window?.rootViewController as? UITabBarController {
+            
+            if UIApplication.shared.applicationIconBadgeNumber != 0{
+                
+                store.alarmBage = true
+                tbc.tabBar.items![1].badgeValue = "●"
+                tbc.tabBar.items![1].badgeColor = .clear
+                tbc.tabBar.items![1].setBadgeTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.red], for: .normal)
+                
+                
+            } else {
+                
+                store.alarmBage = false
+                tbc.tabBar.items![1].badgeValue = ""
+                tbc.tabBar.items![1].badgeColor = .clear
+                tbc.tabBar.items![1].setBadgeTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.red], for: .normal)
+                
+            }
+            
+        }
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -39,6 +85,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneWillEnterForeground(_ scene: UIScene) {
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
+        
+        checkPush()
+        //Switcher.updateRootVC()
+        
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {

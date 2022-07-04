@@ -1,0 +1,1323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u3w-1d-ogz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LexendDeca-VariableFont_wght.ttf">
+            <string>LexendDeca-Bold</string>
+            <string>LexendDeca-SemiBold</string>
+        </array>
+        <array key="Pretendard-Bold.ttf">
+            <string>Pretendard-Bold</string>
+        </array>
+        <array key="Pretendard-Medium.ttf">
+            <string>Pretendard-Medium</string>
+        </array>
+        <array key="Pretendard-Regular.ttf">
+            <string>Pretendard-Regular</string>
+        </array>
+        <array key="Pretendard-SemiBold.ttf">
+            <string>Pretendard-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--D-CARD-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CardVC" id="Y6W-OH-hqX" customClass="CardVC" customModule="Dessert39" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fxR-Hj-GQj" userLabel="emptyView">
+                                <rect key="frame" x="20" y="107" width="374" height="304"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOk-cc-0v7">
+                                        <rect key="frame" x="0.0" y="253.5" width="374" height="50.5"/>
+                                        <string key="text">D-Card를 등록하시면 결제 시 
+추가 정보 입력 없이 39 서비스의 결제수단으로 
+사용하실 수 있습니다.</string>
+                                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                        <color key="textColor" red="0.29411764705882354" green="0.29411764705882354" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbE-5Z-HQl">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="234.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yF6-0I-ei1">
+                                                <rect key="frame" x="90.5" y="68" width="193.5" height="98"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="card_add" imagePlacement="top" imagePadding="11">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="등록된 카드가 없습니다.">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="18" name="Pretendard-SemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <attributedString key="attributedSubtitle">
+                                                        <fragment content="D-Card 를 등록해 주세요.">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.29411764705882354" green="0.29411764705882354" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="14" name="Pretendard-Regular"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="cardSeletHandler:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1X9-8W-gZe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="lbE-5Z-HQl" secondAttribute="height" multiplier="335:210" id="7Xk-zE-4Ws"/>
+                                            <constraint firstItem="yF6-0I-ei1" firstAttribute="centerY" secondItem="lbE-5Z-HQl" secondAttribute="centerY" id="GU5-eH-Dtg"/>
+                                            <constraint firstItem="yF6-0I-ei1" firstAttribute="centerX" secondItem="lbE-5Z-HQl" secondAttribute="centerX" id="N9g-mp-izS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="lbE-5Z-HQl" firstAttribute="leading" secondItem="fxR-Hj-GQj" secondAttribute="leading" id="9vP-wC-e6N"/>
+                                    <constraint firstItem="rOk-cc-0v7" firstAttribute="top" secondItem="lbE-5Z-HQl" secondAttribute="bottom" constant="19" id="GzL-WW-hFr"/>
+                                    <constraint firstAttribute="bottom" secondItem="rOk-cc-0v7" secondAttribute="bottom" id="j91-0k-1rp"/>
+                                    <constraint firstAttribute="trailing" secondItem="rOk-cc-0v7" secondAttribute="trailing" id="jBI-48-cRd"/>
+                                    <constraint firstAttribute="trailing" secondItem="lbE-5Z-HQl" secondAttribute="trailing" id="nXN-ss-GYi"/>
+                                    <constraint firstItem="rOk-cc-0v7" firstAttribute="leading" secondItem="fxR-Hj-GQj" secondAttribute="leading" id="sKl-a7-J8O"/>
+                                    <constraint firstItem="lbE-5Z-HQl" firstAttribute="top" secondItem="fxR-Hj-GQj" secondAttribute="top" id="yam-Gf-hfD"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TYf-25-jwh" userLabel="cardView">
+                                <rect key="frame" x="20" y="107" width="374" height="396.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Czy-CT-08J">
+                                        <rect key="frame" x="75" y="355" width="224" height="41.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="15"/>
+                                        <state key="normal" title="카드 디자인 변경">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cardSeletHandler:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bPJ-Ji-NCA"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tOn-jk-ZdP">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="334"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3LC-ha-dVC">
+                                                <rect key="frame" x="8" y="8" width="358" height="236"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10,000원" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcO-Mm-ioY">
+                                                <rect key="frame" x="0.0" y="257" width="374" height="22"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzM-2d-SeR">
+                                                <rect key="frame" x="15" y="294" width="344" height="29"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="14"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="자동충전설정">
+                                                    <color key="titleColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="0.69803921568627447" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cardChargingHandler:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="l76-D9-8V2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="fcO-Mm-ioY" firstAttribute="leading" secondItem="tOn-jk-ZdP" secondAttribute="leading" id="A1Z-tz-koO"/>
+                                            <constraint firstItem="3LC-ha-dVC" firstAttribute="leading" secondItem="tOn-jk-ZdP" secondAttribute="leading" constant="8" id="EwV-IB-FNG"/>
+                                            <constraint firstItem="kzM-2d-SeR" firstAttribute="top" secondItem="fcO-Mm-ioY" secondAttribute="bottom" constant="15" id="Hyq-s8-fhJ"/>
+                                            <constraint firstItem="3LC-ha-dVC" firstAttribute="top" secondItem="tOn-jk-ZdP" secondAttribute="top" constant="8" id="PbN-oq-J87"/>
+                                            <constraint firstItem="kzM-2d-SeR" firstAttribute="leading" secondItem="tOn-jk-ZdP" secondAttribute="leading" constant="15" id="TVF-66-3Z6"/>
+                                            <constraint firstItem="fcO-Mm-ioY" firstAttribute="top" secondItem="3LC-ha-dVC" secondAttribute="bottom" constant="13" id="c8G-3M-Skc"/>
+                                            <constraint firstAttribute="width" secondItem="tOn-jk-ZdP" secondAttribute="height" multiplier="335:299" id="dNh-mA-Ogo"/>
+                                            <constraint firstAttribute="trailing" secondItem="kzM-2d-SeR" secondAttribute="trailing" constant="15" id="gn9-Ep-VNO"/>
+                                            <constraint firstAttribute="trailing" secondItem="3LC-ha-dVC" secondAttribute="trailing" constant="8" id="hLT-IO-ZKe"/>
+                                            <constraint firstAttribute="trailing" secondItem="fcO-Mm-ioY" secondAttribute="trailing" id="prK-fl-jSy"/>
+                                            <constraint firstAttribute="bottom" secondItem="kzM-2d-SeR" secondAttribute="bottom" constant="11" id="uDm-r9-zZz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Czy-CT-08J" secondAttribute="bottom" id="3RQ-3l-e69"/>
+                                    <constraint firstItem="tOn-jk-ZdP" firstAttribute="leading" secondItem="TYf-25-jwh" secondAttribute="leading" id="Bav-Us-Uon"/>
+                                    <constraint firstAttribute="trailing" secondItem="Czy-CT-08J" secondAttribute="trailing" constant="75" id="bPw-VC-6YW"/>
+                                    <constraint firstAttribute="trailing" secondItem="tOn-jk-ZdP" secondAttribute="trailing" id="gkY-yK-hpi"/>
+                                    <constraint firstItem="tOn-jk-ZdP" firstAttribute="top" secondItem="TYf-25-jwh" secondAttribute="top" id="qa6-wD-Dhl"/>
+                                    <constraint firstItem="Czy-CT-08J" firstAttribute="width" secondItem="Czy-CT-08J" secondAttribute="height" multiplier="225:42" id="wYG-hk-CN4"/>
+                                    <constraint firstItem="Czy-CT-08J" firstAttribute="leading" secondItem="TYf-25-jwh" secondAttribute="leading" constant="75" id="wta-O7-nUl"/>
+                                    <constraint firstItem="Czy-CT-08J" firstAttribute="top" secondItem="tOn-jk-ZdP" secondAttribute="bottom" constant="21" id="xbl-2C-ZfB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TYf-25-jwh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="JqY-1g-csj"/>
+                            <constraint firstItem="TYf-25-jwh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="19" id="ZYn-V8-2aC"/>
+                            <constraint firstAttribute="trailing" secondItem="TYf-25-jwh" secondAttribute="trailing" constant="20" id="cm6-ce-gVf"/>
+                            <constraint firstItem="fxR-Hj-GQj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="dkk-Bf-PNs"/>
+                            <constraint firstItem="fxR-Hj-GQj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="19" id="gKm-zx-j7q"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fxR-Hj-GQj" secondAttribute="trailing" constant="20" id="tgI-wG-acg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="D-CARD" id="jbf-tn-ae1"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="btn_changeDesign" destination="Czy-CT-08J" id="MdN-vH-Hv2"/>
+                        <outlet property="btn_setCharge" destination="kzM-2d-SeR" id="hSV-g6-gtO"/>
+                        <outlet property="cardImage" destination="3LC-ha-dVC" id="QpQ-P6-Vns"/>
+                        <outlet property="cardView" destination="TYf-25-jwh" id="NCh-EH-gmX"/>
+                        <outlet property="emptyView" destination="fxR-Hj-GQj" id="XXw-US-nNH"/>
+                        <outlet property="grayView" destination="lbE-5Z-HQl" id="Zer-CA-FfG"/>
+                        <outlet property="innerView" destination="tOn-jk-ZdP" id="xX8-ZK-1J9"/>
+                        <outlet property="label_money" destination="fcO-Mm-ioY" id="E1X-a0-nBC"/>
+                        <segue destination="09y-WB-ZDP" kind="show" identifier="cardSelect" id="bi4-vo-QWH"/>
+                        <segue destination="nKn-Rq-qJV" kind="show" identifier="cardSetting" id="Cfy-OL-cNo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3171.0144927536235" y="142.63392857142856"/>
+        </scene>
+        <!--카드 선택-->
+        <scene sceneID="btJ-xa-2Cn">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="09y-WB-ZDP" customClass="CardSelecteVC" customModule="Dessert39" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kjY-JC-U8N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWP-Up-l1m" userLabel="cardView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="디자인 변경할 카드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pqo-ST-fPw">
+                                        <rect key="frame" x="20" y="20" width="118.5" height="19"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="16"/>
+                                        <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pGz-VR-gsj">
+                                        <rect key="frame" x="20" y="54" width="86.5" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="pGz-VR-gsj" secondAttribute="height" multiplier="88:55" id="K5k-gM-0gW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재 등록된 카드 입니다." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bu-YS-7Bk">
+                                        <rect key="frame" x="116.5" y="72.5" width="277.5" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="LexendDeca-Bold" family="Lexend Deca" pointSize="14"/>
+                                        <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="pGz-VR-gsj" firstAttribute="top" secondItem="Pqo-ST-fPw" secondAttribute="bottom" constant="15" id="17p-FB-Sfv"/>
+                                    <constraint firstAttribute="height" constant="128" id="7p6-BF-IZD"/>
+                                    <constraint firstAttribute="bottom" secondItem="pGz-VR-gsj" secondAttribute="bottom" constant="20" id="G0Q-Y8-OMQ"/>
+                                    <constraint firstItem="Pqo-ST-fPw" firstAttribute="leading" secondItem="XWP-Up-l1m" secondAttribute="leading" constant="20" id="GQN-xg-E8y"/>
+                                    <constraint firstItem="pGz-VR-gsj" firstAttribute="leading" secondItem="XWP-Up-l1m" secondAttribute="leading" constant="20" id="Gw6-gT-5Yt"/>
+                                    <constraint firstItem="9Bu-YS-7Bk" firstAttribute="centerY" secondItem="pGz-VR-gsj" secondAttribute="centerY" id="P6z-jf-tcM"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Bu-YS-7Bk" secondAttribute="trailing" constant="20" id="aAx-Z0-x1w"/>
+                                    <constraint firstItem="9Bu-YS-7Bk" firstAttribute="leading" secondItem="pGz-VR-gsj" secondAttribute="trailing" constant="10" id="e4H-NX-CZP"/>
+                                    <constraint firstItem="Pqo-ST-fPw" firstAttribute="top" secondItem="XWP-Up-l1m" secondAttribute="top" constant="20" id="gHJ-U1-t43"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yR0-h1-zOe" userLabel="textView">
+                                <rect key="frame" x="0.0" y="216" width="414" height="56"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_plus" translatesAutoresizingMaskIntoConstraints="NO" id="5lZ-f4-KXa">
+                                        <rect key="frame" x="20" y="19.5" width="17" height="17"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카드 디자인을 선택해 주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7j-G1-v3W">
+                                        <rect key="frame" x="42" y="19.5" width="159.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="14"/>
+                                        <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="5lZ-f4-KXa" firstAttribute="leading" secondItem="yR0-h1-zOe" secondAttribute="leading" constant="20" id="BgT-US-huu"/>
+                                    <constraint firstItem="5lZ-f4-KXa" firstAttribute="centerY" secondItem="yR0-h1-zOe" secondAttribute="centerY" id="IJm-az-iJn"/>
+                                    <constraint firstAttribute="height" constant="56" id="QWO-xU-jLe"/>
+                                    <constraint firstItem="N7j-G1-v3W" firstAttribute="leading" secondItem="5lZ-f4-KXa" secondAttribute="trailing" constant="5" id="SoY-o4-fYT"/>
+                                    <constraint firstItem="N7j-G1-v3W" firstAttribute="centerY" secondItem="yR0-h1-zOe" secondAttribute="centerY" id="d2S-Ze-4td"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1uP-EV-mW2">
+                                <rect key="frame" x="0.0" y="272" width="414" height="590"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardHeaderCell" rowHeight="56" id="FOf-3P-kxk" customClass="CardHeaderCell" customModule="Dessert39" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FOf-3P-kxk" id="LHN-gD-amf">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7w-ry-I5D">
+                                                    <rect key="frame" x="20" y="25" width="374" height="21"/>
+                                                    <fontDescription key="fontDescription" name="LexendDeca-SemiBold" family="Lexend Deca" pointSize="14"/>
+                                                    <color key="textColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="v7w-ry-I5D" firstAttribute="leading" secondItem="LHN-gD-amf" secondAttribute="leading" constant="20" id="C1R-Ck-jzD"/>
+                                                <constraint firstAttribute="bottom" secondItem="v7w-ry-I5D" secondAttribute="bottom" constant="10" id="IQ1-Bq-t7z"/>
+                                                <constraint firstAttribute="trailing" secondItem="v7w-ry-I5D" secondAttribute="trailing" constant="20" id="g6h-Nb-Doh"/>
+                                                <constraint firstItem="v7w-ry-I5D" firstAttribute="top" secondItem="LHN-gD-amf" secondAttribute="top" constant="25" id="lnW-El-wBI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="headerTitle" destination="v7w-ry-I5D" id="wKa-78-u04"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardCell" rowHeight="147" id="7qR-wh-3SV" customClass="CardCell" customModule="Dessert39" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="100.5" width="414" height="147"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7qR-wh-3SV" id="PjN-Vn-Bw4">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="147"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IgE-P3-MFy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="147"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DcK-mH-JnB">
+                                                        <size key="itemSize" width="128" height="128"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardImageCell" id="jMt-4k-0hJ" customClass="CardImageCell" customModule="Dessert39" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="9.5" width="128" height="128"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bSf-hJ-Fg6">
+                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jRN-Ue-7T2">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="jRN-Ue-7T2" firstAttribute="leading" secondItem="bSf-hJ-Fg6" secondAttribute="leading" id="TbX-CJ-XYo"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="jRN-Ue-7T2" secondAttribute="bottom" id="lIE-fB-Pnc"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="jRN-Ue-7T2" secondAttribute="trailing" id="pRs-5P-dHe"/>
+                                                                    <constraint firstItem="jRN-Ue-7T2" firstAttribute="top" secondItem="bSf-hJ-Fg6" secondAttribute="top" id="sEo-01-rIa"/>
+                                                                </constraints>
+                                                            </collectionViewCellContentView>
+                                                            <connections>
+                                                                <outlet property="imageView" destination="jRN-Ue-7T2" id="qeD-MN-Du1"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="IgE-P3-MFy" secondAttribute="bottom" id="8IR-O9-Q64"/>
+                                                <constraint firstItem="IgE-P3-MFy" firstAttribute="leading" secondItem="PjN-Vn-Bw4" secondAttribute="leading" id="dX9-aS-QP0"/>
+                                                <constraint firstAttribute="trailing" secondItem="IgE-P3-MFy" secondAttribute="trailing" id="lfw-GZ-wq3"/>
+                                                <constraint firstItem="IgE-P3-MFy" firstAttribute="top" secondItem="PjN-Vn-Bw4" secondAttribute="top" id="vul-G3-Gry"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionView" destination="IgE-P3-MFy" id="gsZ-Tc-DdQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardButtonCell" rowHeight="84" id="8FS-0b-vIi" customClass="CardButtonCell" customModule="Dessert39" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="247.5" width="414" height="84"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8FS-0b-vIi" id="hER-at-Ej8">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EiG-9a-ZSl">
+                                                    <rect key="frame" x="20" y="35" width="374" height="47"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="15"/>
+                                                    <state key="normal" title="변경하기">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="EiG-9a-ZSl" secondAttribute="trailing" constant="20" id="TE6-hB-nEW"/>
+                                                <constraint firstItem="EiG-9a-ZSl" firstAttribute="leading" secondItem="hER-at-Ej8" secondAttribute="leading" constant="20" id="TLa-FM-Yra"/>
+                                                <constraint firstItem="EiG-9a-ZSl" firstAttribute="top" secondItem="hER-at-Ej8" secondAttribute="top" constant="35" id="eZy-d4-pgR"/>
+                                                <constraint firstItem="EiG-9a-ZSl" firstAttribute="width" secondItem="EiG-9a-ZSl" secondAttribute="height" multiplier="335:42" id="yg2-kX-0KS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="btn_change" destination="EiG-9a-ZSl" id="y3c-rj-UYF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vXv-li-wRf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vXv-li-wRf" firstAttribute="trailing" secondItem="1uP-EV-mW2" secondAttribute="trailing" id="1hY-zx-7Vf"/>
+                            <constraint firstItem="vXv-li-wRf" firstAttribute="bottom" secondItem="1uP-EV-mW2" secondAttribute="bottom" id="Izo-Uw-fuG"/>
+                            <constraint firstItem="vXv-li-wRf" firstAttribute="trailing" secondItem="XWP-Up-l1m" secondAttribute="trailing" id="KJa-EM-9Em"/>
+                            <constraint firstItem="vXv-li-wRf" firstAttribute="trailing" secondItem="yR0-h1-zOe" secondAttribute="trailing" id="Kri-vz-jeX"/>
+                            <constraint firstItem="yR0-h1-zOe" firstAttribute="top" secondItem="XWP-Up-l1m" secondAttribute="bottom" id="OfM-Z0-ney"/>
+                            <constraint firstItem="1uP-EV-mW2" firstAttribute="top" secondItem="yR0-h1-zOe" secondAttribute="bottom" id="RMN-2c-FQd"/>
+                            <constraint firstItem="yR0-h1-zOe" firstAttribute="leading" secondItem="vXv-li-wRf" secondAttribute="leading" id="TFL-Kh-MAN"/>
+                            <constraint firstItem="XWP-Up-l1m" firstAttribute="leading" secondItem="vXv-li-wRf" secondAttribute="leading" id="dRH-Uq-mio"/>
+                            <constraint firstItem="XWP-Up-l1m" firstAttribute="top" secondItem="vXv-li-wRf" secondAttribute="top" id="j2M-f8-JSX"/>
+                            <constraint firstItem="1uP-EV-mW2" firstAttribute="leading" secondItem="vXv-li-wRf" secondAttribute="leading" id="qb6-2T-vER"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="카드 선택" id="gbL-IK-mwg"/>
+                    <connections>
+                        <outlet property="selectedImage" destination="pGz-VR-gsj" id="OPT-kv-d0h"/>
+                        <outlet property="selectedTitle" destination="9Bu-YS-7Bk" id="B2j-CF-B0B"/>
+                        <outlet property="selectedView" destination="XWP-Up-l1m" id="eit-Tt-3Ir"/>
+                        <outlet property="tableView" destination="1uP-EV-mW2" id="d8c-qg-nIH"/>
+                        <outlet property="textViewTop" destination="OfM-Z0-ney" id="Cbk-hh-wtM"/>
+                        <segue destination="nKn-Rq-qJV" kind="show" identifier="cardCharging" id="E1z-IR-Ogy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ygf-su-zsS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3925" y="143"/>
+        </scene>
+        <!--카드충전-->
+        <scene sceneID="RNT-aO-dHT">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="nKn-Rq-qJV" customClass="CardCharging" customModule="Dessert39" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z2S-TR-1LZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FeY-Ee-7n4" userLabel="cardView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="충전할 카드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HbY-vB-wqF">
+                                        <rect key="frame" x="20" y="20" width="73" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="16"/>
+                                        <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dVF-db-rsm">
+                                        <rect key="frame" x="20" y="54.5" width="85.5" height="53.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dVF-db-rsm" secondAttribute="height" multiplier="88:55" id="pri-6F-evw"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D39" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIm-bh-39z">
+                                        <rect key="frame" x="115.5" y="72.5" width="278.5" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="LexendDeca-Bold" family="Lexend Deca" pointSize="14"/>
+                                        <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="zIm-bh-39z" firstAttribute="leading" secondItem="dVF-db-rsm" secondAttribute="trailing" constant="10" id="3lA-pV-dlq"/>
+                                    <constraint firstItem="zIm-bh-39z" firstAttribute="centerY" secondItem="dVF-db-rsm" secondAttribute="centerY" id="4F2-Od-Gmb"/>
+                                    <constraint firstItem="HbY-vB-wqF" firstAttribute="top" secondItem="FeY-Ee-7n4" secondAttribute="top" constant="20" id="MN0-Sm-pqU"/>
+                                    <constraint firstAttribute="bottom" secondItem="dVF-db-rsm" secondAttribute="bottom" constant="20" id="SeX-AZ-am4"/>
+                                    <constraint firstItem="HbY-vB-wqF" firstAttribute="leading" secondItem="FeY-Ee-7n4" secondAttribute="leading" constant="20" id="UNd-Bk-3Mp"/>
+                                    <constraint firstItem="dVF-db-rsm" firstAttribute="top" secondItem="HbY-vB-wqF" secondAttribute="bottom" constant="15" id="YlE-pa-FcD"/>
+                                    <constraint firstAttribute="trailing" secondItem="zIm-bh-39z" secondAttribute="trailing" constant="20" id="dqU-pj-8oV"/>
+                                    <constraint firstItem="dVF-db-rsm" firstAttribute="leading" secondItem="FeY-Ee-7n4" secondAttribute="leading" constant="20" id="jWJ-qG-Dkp"/>
+                                    <constraint firstAttribute="height" constant="128" id="x9L-zV-8di"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8g-Xo-1eA" userLabel="lineView">
+                                <rect key="frame" x="0.0" y="216" width="414" height="5"/>
+                                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="OtV-qm-Va9"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QKg-3l-Rjc">
+                                <rect key="frame" x="0.0" y="221" width="414" height="945"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R68-Hy-m7F">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="889"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L1K-wv-9pu" userLabel="typeView">
+                                                <rect key="frame" x="20" y="0.0" width="374" height="95"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="충전 형태" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMy-eL-3Ze">
+                                                        <rect key="frame" x="0.0" y="20" width="59.5" height="19.5"/>
+                                                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="16"/>
+                                                        <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Bzb-g0-zdp">
+                                                        <rect key="frame" x="0.0" y="54.5" width="374" height="40.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDt-LG-hgV">
+                                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="40.5"/>
+                                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="자동충전">
+                                                                    <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="touchTypeButtons:" destination="nKn-Rq-qJV" eventType="touchUpInside" id="Tpa-pa-Sk7"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKM-Yw-nvD">
+                                                                <rect key="frame" x="194.5" y="0.0" width="179.5" height="40.5"/>
+                                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="일반충전">
+                                                                    <color key="titleColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="touchTypeButtons:" destination="nKn-Rq-qJV" eventType="touchUpInside" id="WcL-aT-vAj"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Bzb-g0-zdp" firstAttribute="leading" secondItem="L1K-wv-9pu" secondAttribute="leading" id="5VC-5A-Whi"/>
+                                                    <constraint firstItem="Bzb-g0-zdp" firstAttribute="top" secondItem="vMy-eL-3Ze" secondAttribute="bottom" constant="15" id="5Vw-WY-woE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Bzb-g0-zdp" secondAttribute="trailing" id="B4r-Ce-OQH"/>
+                                                    <constraint firstItem="vMy-eL-3Ze" firstAttribute="leading" secondItem="L1K-wv-9pu" secondAttribute="leading" id="IMf-AO-HoW"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Bzb-g0-zdp" secondAttribute="bottom" id="j5f-Wz-nvB"/>
+                                                    <constraint firstAttribute="width" secondItem="L1K-wv-9pu" secondAttribute="height" multiplier="335:85" id="jIC-4V-1zF"/>
+                                                    <constraint firstItem="vMy-eL-3Ze" firstAttribute="top" secondItem="L1K-wv-9pu" secondAttribute="top" constant="20" id="no5-lR-duN"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VqF-hW-RvX" userLabel="standardView">
+                                                <rect key="frame" x="20" y="95" width="374" height="143"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기준 잔액" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRl-JI-WTs">
+                                                        <rect key="frame" x="0.0" y="20" width="59.5" height="26.5"/>
+                                                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="16"/>
+                                                        <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bhM-PS-afe">
+                                                        <rect key="frame" x="0.0" y="61.5" width="374" height="35.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hX-RD-Uc0">
+                                                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="35.5"/>
+                                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="1만원">
+                                                                    <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="touchStandardButtons:" destination="nKn-Rq-qJV" eventType="touchUpInside" id="DXn-3Z-0ro"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wP8-0p-Ri4">
+                                                                <rect key="frame" x="129.5" y="0.0" width="115" height="35.5"/>
+                                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="3만원">
+                                                                    <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="touchStandardButtons:" destination="nKn-Rq-qJV" eventType="touchUpInside" id="0Jc-0k-O1v"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scR-SK-Xx6">
+                                                                <rect key="frame" x="259.5" y="0.0" width="114.5" height="35.5"/>
+                                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="5만원">
+                                                                    <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="touchStandardButtons:" destination="nKn-Rq-qJV" eventType="touchUpInside" id="3Ki-9U-Yfs"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="bhM-PS-afe" secondAttribute="height" multiplier="335:32" id="X5F-Ra-lDv"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="jOS-U4-k2H">
+                                                        <rect key="frame" x="0.0" y="107" width="374" height="36"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RlC-lT-naN">
+                                                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="36"/>
+                                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="7만원">
+                                                                    <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="touchStandardButtons:" destination="nKn-Rq-qJV" eventType="touchUpInside" id="Bvk-zO-wPQ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHB-TT-JRO">
+                                                                <rect key="frame" x="129.5" y="0.0" width="115" height="36"/>
+                                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="10만원">
+                                                                    <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="touchStandardButtons:" destination="nKn-Rq-qJV" eventType="touchUpInside" id="mEL-CT-E8H"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bf8-WD-IaM">
+                                                                <rect key="frame" x="259.5" y="0.0" width="114.5" height="36"/>
+                                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="직접입력">
+                                                                    <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="touchStandardButtons:" destination="nKn-Rq-qJV" eventType="touchUpInside" id="DlB-t6-x2A"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="jOS-U4-k2H" secondAttribute="height" multiplier="335:32" id="dVJ-l7-Iu7"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="bhM-PS-afe" secondAttribute="trailing" id="7rO-lI-z8x"/>
+                                                    <constraint firstItem="bhM-PS-afe" firstAttribute="top" secondItem="GRl-JI-WTs" secondAttribute="bottom" constant="15" id="Qka-1e-SfN"/>
+                                                    <constraint firstItem="jOS-U4-k2H" firstAttribute="leading" secondItem="VqF-hW-RvX" secondAttribute="leading" id="Qm6-8d-WaJ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jOS-U4-k2H" secondAttribute="trailing" id="Z8J-Pi-kgI"/>
+                                                    <constraint firstAttribute="bottom" secondItem="jOS-U4-k2H" secondAttribute="bottom" id="djU-j6-k5l"/>
+                                                    <constraint firstItem="GRl-JI-WTs" firstAttribute="top" secondItem="VqF-hW-RvX" secondAttribute="top" constant="20" id="hW8-kC-9bT"/>
+                                                    <constraint firstItem="bhM-PS-afe" firstAttribute="leading" secondItem="VqF-hW-RvX" secondAttribute="leading" id="pB1-1t-4D1"/>
+                                                    <constraint firstAttribute="width" secondItem="VqF-hW-RvX" secondAttribute="height" multiplier="335:128" id="qNa-U7-k3D"/>
+                                                    <constraint firstItem="GRl-JI-WTs" firstAttribute="leading" secondItem="VqF-hW-RvX" secondAttribute="leading" id="sj9-NK-l6W"/>
+                                                    <constraint firstItem="jOS-U4-k2H" firstAttribute="top" secondItem="bhM-PS-afe" secondAttribute="bottom" constant="10" id="uoO-gQ-lWf"/>
+                                                </constraints>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cBW-hf-g4l">
+                                                <rect key="frame" x="20" y="248" width="352" height="33.5"/>
+                                                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="cBW-hf-g4l" secondAttribute="height" multiplier="335:32" id="O86-Nr-KgQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZe-xz-Paw">
+                                                <rect key="frame" x="380" y="255" width="14" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqQ-JU-o7P" userLabel="amountView">
+                                                <rect key="frame" x="20" y="238" width="374" height="142.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="충전 금액" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hY2-99-VwF">
+                                                        <rect key="frame" x="0.0" y="20" width="59.5" height="26"/>
+                                                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="16"/>
+                                                        <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="UbD-zl-ArR">
+                                                        <rect key="frame" x="0.0" y="61" width="374" height="36"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4F-TG-qse">
+                                                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="36"/>
+                                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="1만원">
+                                                                    <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="touchChargingButtons:" destination="nKn-Rq-qJV" eventType="touchUpInside" id="wJQ-qo-0Xn"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44D-hd-gwv">
+                                                                <rect key="frame" x="129.5" y="0.0" width="115" height="36"/>
+                                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="3만원">
+                                                                    <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="touchChargingButtons:" destination="nKn-Rq-qJV" eventType="touchUpInside" id="EXH-Bu-Kks"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b20-Pf-CDx">
+                                                                <rect key="frame" x="259.5" y="0.0" width="114.5" height="36"/>
+                                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="5만원">
+                                                                    <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="touchChargingButtons:" destination="nKn-Rq-qJV" eventType="touchUpInside" id="tI8-ma-rFH"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="UbD-zl-ArR" secondAttribute="height" multiplier="335:32" id="L3Q-Xd-CCy"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="mSh-4W-Gav">
+                                                        <rect key="frame" x="0.0" y="107" width="374" height="35.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PE0-b1-wmP">
+                                                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="35.5"/>
+                                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="7만원">
+                                                                    <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="touchChargingButtons:" destination="nKn-Rq-qJV" eventType="touchUpInside" id="q6r-T8-m4c"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oil-q3-mxc">
+                                                                <rect key="frame" x="129.5" y="0.0" width="115" height="35.5"/>
+                                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="10만원">
+                                                                    <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="touchChargingButtons:" destination="nKn-Rq-qJV" eventType="touchUpInside" id="enT-Ke-JiF"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uM4-3b-5Pe">
+                                                                <rect key="frame" x="259.5" y="0.0" width="114.5" height="35.5"/>
+                                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="직접입력">
+                                                                    <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="touchChargingButtons:" destination="nKn-Rq-qJV" eventType="touchUpInside" id="3E8-3h-pN4"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="mSh-4W-Gav" secondAttribute="height" multiplier="335:32" id="Kea-3V-fIq"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="hY2-99-VwF" firstAttribute="top" secondItem="dqQ-JU-o7P" secondAttribute="top" constant="20" id="1b0-cI-gz1"/>
+                                                    <constraint firstItem="mSh-4W-Gav" firstAttribute="top" secondItem="UbD-zl-ArR" secondAttribute="bottom" constant="10" id="FRZ-dQ-odi"/>
+                                                    <constraint firstItem="UbD-zl-ArR" firstAttribute="leading" secondItem="dqQ-JU-o7P" secondAttribute="leading" id="Nnw-l0-yC2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="mSh-4W-Gav" secondAttribute="trailing" id="S1p-6T-UgQ"/>
+                                                    <constraint firstItem="hY2-99-VwF" firstAttribute="leading" secondItem="dqQ-JU-o7P" secondAttribute="leading" id="XC9-de-oDq"/>
+                                                    <constraint firstItem="UbD-zl-ArR" firstAttribute="top" secondItem="hY2-99-VwF" secondAttribute="bottom" constant="15" id="egu-ml-dOV"/>
+                                                    <constraint firstItem="mSh-4W-Gav" firstAttribute="leading" secondItem="dqQ-JU-o7P" secondAttribute="leading" id="h2E-lB-i90"/>
+                                                    <constraint firstAttribute="bottom" secondItem="mSh-4W-Gav" secondAttribute="bottom" id="jhe-Rc-QYg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="UbD-zl-ArR" secondAttribute="trailing" id="qZu-Ir-1VJ"/>
+                                                    <constraint firstAttribute="width" secondItem="dqQ-JU-o7P" secondAttribute="height" multiplier="335:128" id="tIB-BO-aAL"/>
+                                                </constraints>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qyp-dR-BB9">
+                                                <rect key="frame" x="20" y="390.5" width="352" height="34"/>
+                                                <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Qyp-dR-BB9" secondAttribute="height" multiplier="335:32" id="UzZ-QJ-iHu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgQ-Yv-rZX">
+                                                <rect key="frame" x="380" y="398" width="14" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="65L-7x-J3a" userLabel="meansView">
+                                                <rect key="frame" x="20" y="380.5" width="374" height="96"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결제 수단" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ek-tF-D1S">
+                                                        <rect key="frame" x="0.0" y="20" width="59.5" height="19.5"/>
+                                                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="16"/>
+                                                        <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="BWU-5V-Rk7">
+                                                        <rect key="frame" x="0.0" y="54.5" width="374" height="36"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FP5-8Z-RKl">
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="36"/>
+                                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="신용카드">
+                                                                    <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="touchMeansButtons:" destination="nKn-Rq-qJV" eventType="touchUpInside" id="Grq-L1-bp1"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="BWU-5V-Rk7" secondAttribute="height" multiplier="335:32" id="mKq-jJ-mYj"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="BWU-5V-Rk7" secondAttribute="trailing" id="AQE-UG-9fB"/>
+                                                    <constraint firstItem="BWU-5V-Rk7" firstAttribute="leading" secondItem="65L-7x-J3a" secondAttribute="leading" id="U1F-5T-J5n"/>
+                                                    <constraint firstItem="6ek-tF-D1S" firstAttribute="top" secondItem="65L-7x-J3a" secondAttribute="top" constant="20" id="gZv-wj-0kL"/>
+                                                    <constraint firstItem="BWU-5V-Rk7" firstAttribute="top" secondItem="6ek-tF-D1S" secondAttribute="bottom" constant="15" id="jq2-m5-uzu"/>
+                                                    <constraint firstItem="6ek-tF-D1S" firstAttribute="leading" secondItem="65L-7x-J3a" secondAttribute="leading" id="pHb-Y3-tdf"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WYB-uX-Vr7" userLabel="lineView">
+                                                <rect key="frame" x="0.0" y="496.5" width="414" height="5"/>
+                                                <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="5" id="Aug-g3-URN"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결제 시 유의사항" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0p-kr-LDs">
+                                                <rect key="frame" x="20" y="521.5" width="104.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="16"/>
+                                                <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="21M-Ya-gcJ">
+                                                <rect key="frame" x="20" y="551" width="374" height="238"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="결제 시 유의사항을 확인해 주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQA-gx-W22">
+                                                        <rect key="frame" x="15" y="13" width="183" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="14"/>
+                                                        <color key="textColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="dyE-7X-SNX">
+                                                        <rect key="frame" x="15" y="45" width="344" height="1"/>
+                                                        <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="XWc-i3-Hme"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ElA-ou-SQo">
+                                                        <rect key="frame" x="326" y="8" width="33" height="27"/>
+                                                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="⌃ 접기">
+                                                            <color key="titleColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="0.69803921568627447" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="expendHandler:" destination="nKn-Rq-qJV" eventType="touchUpInside" id="tTz-6F-D0N"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAz-YB-ee3">
+                                                        <rect key="frame" x="15" y="60" width="344" height="163"/>
+                                                        <string key="text">- 자동 충전이란, 삼구 카드 잔액이 결제 완료 시점 기준으로 설정하신 
+기준 잔액 보다 낮아지면 설정하신 금액으로 자동 충전되는 
+서비스입니다.
+- 해지는 자동 충전 진행 중에만 가능하며, 자동 충전 설정에서 바로 
+해지 가능합니다.
+- 충전은 50만 원까지 가능하며, 잔액이 50만 원을 초과하는 경우 더 
+이상 충전되지 않습니다.
+- 유효기간 경과 전에는 최종 충전 시점 금액의 60% 이상 사용 시 남은 
+잔액 환불이 가능합니다. 유효기간 경과 후에는 삼구 카드 잔액의 
+90%를 환불받을 수 있으며 본인 명의의 계좌로 신청일 기준 7 영업일
+이내에 환불받을 수 있습니다.
+- 충전 금액 유효 기간은 1년이며, 유효기간 만료 7일 전, 3일 전, 1일 전 
+총 3회 푸시로 안내됩니다.
+- 매장에서의 카드 잔액 환불은 불가하며, 소멸시효 기한 도래 시 환불이 
+불가합니다.
+- 소멸시효 기한은 충전 일로부터 5년이며 기한이 경과하면 소멸됩니다.
+- 자동 충전 이후 거래 이력이 없는 경우, 충전일 포함 14일 내 충전 
+취소가 가능합니다. ( 메뉴 &gt; 카드 충전 내역 &gt; 결제 취소 )
+- 충전 취소 시 카드사 환불 정책에 따라 취소 가능하며, 카드사에 
+따라 2-7일 소요될 수 있습니다.</string>
+                                                        <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="12"/>
+                                                        <color key="textColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="eAz-YB-ee3" secondAttribute="trailing" constant="15" id="60F-Zp-ES8"/>
+                                                    <constraint firstItem="eAz-YB-ee3" firstAttribute="leading" secondItem="21M-Ya-gcJ" secondAttribute="leading" constant="15" id="ETb-8x-X36"/>
+                                                    <constraint firstItem="eAz-YB-ee3" firstAttribute="top" secondItem="21M-Ya-gcJ" secondAttribute="top" constant="60" id="Gqh-IB-X8l"/>
+                                                    <constraint firstItem="ElA-ou-SQo" firstAttribute="centerY" secondItem="hQA-gx-W22" secondAttribute="centerY" id="J79-Hl-kyb"/>
+                                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="eAz-YB-ee3" secondAttribute="bottom" constant="15" id="KZk-r2-Jq0"/>
+                                                    <constraint firstAttribute="width" secondItem="21M-Ya-gcJ" secondAttribute="height" multiplier="335:213" id="Okg-Kg-qjn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ElA-ou-SQo" secondAttribute="trailing" constant="15" id="QkS-wo-xGs"/>
+                                                    <constraint firstItem="dyE-7X-SNX" firstAttribute="leading" secondItem="21M-Ya-gcJ" secondAttribute="leading" constant="15" id="bGP-wE-OGt"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dyE-7X-SNX" secondAttribute="trailing" constant="15" id="csM-sV-dnc"/>
+                                                    <constraint firstItem="dyE-7X-SNX" firstAttribute="top" secondItem="hQA-gx-W22" secondAttribute="bottom" constant="15" id="oYz-Jt-e0O"/>
+                                                    <constraint firstItem="hQA-gx-W22" firstAttribute="top" secondItem="21M-Ya-gcJ" secondAttribute="top" constant="13" id="paR-Qs-2So"/>
+                                                    <constraint firstItem="hQA-gx-W22" firstAttribute="leading" secondItem="21M-Ya-gcJ" secondAttribute="leading" constant="15" id="ymW-9G-bHB"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="65L-7x-J3a" firstAttribute="top" secondItem="dqQ-JU-o7P" secondAttribute="bottom" id="0aS-RM-bYk"/>
+                                            <constraint firstItem="L1K-wv-9pu" firstAttribute="leading" secondItem="R68-Hy-m7F" secondAttribute="leading" constant="20" id="2It-Te-PDa"/>
+                                            <constraint firstAttribute="trailing" secondItem="VqF-hW-RvX" secondAttribute="trailing" constant="20" id="42L-VC-OJ5"/>
+                                            <constraint firstItem="dqQ-JU-o7P" firstAttribute="leading" secondItem="R68-Hy-m7F" secondAttribute="leading" constant="20" id="4Yp-Xp-q5N"/>
+                                            <constraint firstItem="zgQ-Yv-rZX" firstAttribute="leading" secondItem="Qyp-dR-BB9" secondAttribute="trailing" constant="8" id="7IU-vm-PY7"/>
+                                            <constraint firstItem="Qyp-dR-BB9" firstAttribute="top" secondItem="dqQ-JU-o7P" secondAttribute="bottom" constant="10" id="7fH-m9-4c9"/>
+                                            <constraint firstAttribute="bottom" secondItem="21M-Ya-gcJ" secondAttribute="bottom" constant="100" id="7xk-uz-Agt"/>
+                                            <constraint firstAttribute="trailing" secondItem="zgQ-Yv-rZX" secondAttribute="trailing" constant="20" id="9ZR-ld-A8I"/>
+                                            <constraint firstItem="pZe-xz-Paw" firstAttribute="centerY" secondItem="cBW-hf-g4l" secondAttribute="centerY" id="9l7-WQ-4Kd"/>
+                                            <constraint firstItem="c0p-kr-LDs" firstAttribute="leading" secondItem="R68-Hy-m7F" secondAttribute="leading" constant="20" id="FKs-SR-mcM"/>
+                                            <constraint firstItem="65L-7x-J3a" firstAttribute="width" secondItem="65L-7x-J3a" secondAttribute="height" multiplier="335:86" id="I5X-eW-Szs"/>
+                                            <constraint firstAttribute="trailing" secondItem="pZe-xz-Paw" secondAttribute="trailing" constant="20" id="JHC-Aw-e2K"/>
+                                            <constraint firstItem="21M-Ya-gcJ" firstAttribute="leading" secondItem="R68-Hy-m7F" secondAttribute="leading" constant="20" id="Tq6-Nj-BoP"/>
+                                            <constraint firstItem="dqQ-JU-o7P" firstAttribute="top" secondItem="VqF-hW-RvX" secondAttribute="bottom" id="VP9-kg-Q58"/>
+                                            <constraint firstAttribute="trailing" secondItem="dqQ-JU-o7P" secondAttribute="trailing" constant="20" id="WJl-zj-Mgz"/>
+                                            <constraint firstItem="65L-7x-J3a" firstAttribute="leading" secondItem="R68-Hy-m7F" secondAttribute="leading" constant="20" id="WKH-jf-Dbb"/>
+                                            <constraint firstItem="VqF-hW-RvX" firstAttribute="top" secondItem="L1K-wv-9pu" secondAttribute="bottom" id="Ztg-rQ-hgA"/>
+                                            <constraint firstItem="21M-Ya-gcJ" firstAttribute="top" secondItem="c0p-kr-LDs" secondAttribute="bottom" constant="10" id="a3B-ao-drj"/>
+                                            <constraint firstAttribute="trailing" secondItem="65L-7x-J3a" secondAttribute="trailing" constant="20" id="aNu-V8-2fv"/>
+                                            <constraint firstItem="VqF-hW-RvX" firstAttribute="leading" secondItem="R68-Hy-m7F" secondAttribute="leading" constant="20" id="cot-do-KOb"/>
+                                            <constraint firstItem="WYB-uX-Vr7" firstAttribute="leading" secondItem="R68-Hy-m7F" secondAttribute="leading" id="df7-az-Myt"/>
+                                            <constraint firstAttribute="trailing" secondItem="L1K-wv-9pu" secondAttribute="trailing" constant="20" id="dsc-vs-lqG"/>
+                                            <constraint firstAttribute="trailing" secondItem="21M-Ya-gcJ" secondAttribute="trailing" constant="20" id="du5-3W-0qX"/>
+                                            <constraint firstItem="WYB-uX-Vr7" firstAttribute="top" secondItem="65L-7x-J3a" secondAttribute="bottom" constant="20" id="g1c-YW-KcR"/>
+                                            <constraint firstItem="cBW-hf-g4l" firstAttribute="top" secondItem="VqF-hW-RvX" secondAttribute="bottom" constant="10" id="hRL-eI-YNK"/>
+                                            <constraint firstItem="pZe-xz-Paw" firstAttribute="leading" secondItem="cBW-hf-g4l" secondAttribute="trailing" constant="8" id="j8d-ET-Gsk"/>
+                                            <constraint firstItem="zgQ-Yv-rZX" firstAttribute="centerY" secondItem="Qyp-dR-BB9" secondAttribute="centerY" id="maw-tg-rSW"/>
+                                            <constraint firstItem="L1K-wv-9pu" firstAttribute="top" secondItem="R68-Hy-m7F" secondAttribute="top" id="oBi-S5-wNR"/>
+                                            <constraint firstItem="cBW-hf-g4l" firstAttribute="leading" secondItem="R68-Hy-m7F" secondAttribute="leading" constant="20" id="uLt-y6-0l7"/>
+                                            <constraint firstItem="c0p-kr-LDs" firstAttribute="top" secondItem="WYB-uX-Vr7" secondAttribute="bottom" constant="20" id="wfM-WQ-LoC"/>
+                                            <constraint firstAttribute="trailing" secondItem="WYB-uX-Vr7" secondAttribute="trailing" id="x0B-1T-XNe"/>
+                                            <constraint firstItem="Qyp-dR-BB9" firstAttribute="leading" secondItem="R68-Hy-m7F" secondAttribute="leading" constant="20" id="ySY-Zr-kfh"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="R68-Hy-m7F" firstAttribute="width" secondItem="kC3-qW-4dv" secondAttribute="width" id="CWF-Gg-Wgt"/>
+                                    <constraint firstItem="R68-Hy-m7F" firstAttribute="leading" secondItem="6X2-Qg-VnH" secondAttribute="leading" id="HBJ-MW-8my"/>
+                                    <constraint firstItem="R68-Hy-m7F" firstAttribute="bottom" secondItem="6X2-Qg-VnH" secondAttribute="bottom" id="MsZ-cS-HA7"/>
+                                    <constraint firstItem="R68-Hy-m7F" firstAttribute="trailing" secondItem="6X2-Qg-VnH" secondAttribute="trailing" id="h2X-Vj-j03"/>
+                                    <constraint firstItem="R68-Hy-m7F" firstAttribute="top" secondItem="6X2-Qg-VnH" secondAttribute="top" id="m5T-ow-KAC"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="6X2-Qg-VnH"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="kC3-qW-4dv"/>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mIU-JR-3N4">
+                                <rect key="frame" x="0.0" y="1077.5" width="414" height="88.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lWc-Qq-f0M">
+                                        <rect key="frame" x="20" y="20" width="374" height="48.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXC-8e-k15">
+                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="48.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="자동 충전 해지">
+                                                    <color key="titleColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAQ-W7-HcK">
+                                                <rect key="frame" x="194.5" y="0.0" width="179.5" height="48.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="14"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="설정 변경">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xt4-EG-fGn">
+                                        <rect key="frame" x="20" y="20" width="374" height="48.5"/>
+                                        <color key="backgroundColor" red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="15"/>
+                                        <state key="normal" title="카드 등록하기">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="xt4-EG-fGn" secondAttribute="bottom" constant="20" id="3a8-gG-hmQ"/>
+                                    <constraint firstAttribute="width" secondItem="mIU-JR-3N4" secondAttribute="height" multiplier="375:80" id="3qo-Vf-q69"/>
+                                    <constraint firstAttribute="trailing" secondItem="xt4-EG-fGn" secondAttribute="trailing" constant="20" id="Bsy-W3-K9S"/>
+                                    <constraint firstItem="lWc-Qq-f0M" firstAttribute="leading" secondItem="mIU-JR-3N4" secondAttribute="leading" constant="20" id="CUy-Ry-wkx"/>
+                                    <constraint firstItem="lWc-Qq-f0M" firstAttribute="top" secondItem="mIU-JR-3N4" secondAttribute="top" constant="20" id="OLg-nT-hue"/>
+                                    <constraint firstAttribute="trailing" secondItem="lWc-Qq-f0M" secondAttribute="trailing" constant="20" id="atB-u9-c7s"/>
+                                    <constraint firstAttribute="bottom" secondItem="lWc-Qq-f0M" secondAttribute="bottom" constant="20" id="itK-wI-8mE"/>
+                                    <constraint firstItem="xt4-EG-fGn" firstAttribute="leading" secondItem="mIU-JR-3N4" secondAttribute="leading" constant="20" id="sM4-dJ-XJ6"/>
+                                    <constraint firstItem="xt4-EG-fGn" firstAttribute="top" secondItem="mIU-JR-3N4" secondAttribute="top" constant="20" id="t2p-DO-XAF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yIC-1q-OFx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="H8g-Xo-1eA" firstAttribute="top" secondItem="FeY-Ee-7n4" secondAttribute="bottom" id="4H6-AM-HCA"/>
+                            <constraint firstItem="QKg-3l-Rjc" firstAttribute="trailing" secondItem="yIC-1q-OFx" secondAttribute="trailing" id="4KE-Df-2ar"/>
+                            <constraint firstItem="mIU-JR-3N4" firstAttribute="leading" secondItem="yIC-1q-OFx" secondAttribute="leading" id="4ja-3Y-hCt"/>
+                            <constraint firstItem="QKg-3l-Rjc" firstAttribute="top" secondItem="H8g-Xo-1eA" secondAttribute="bottom" id="74E-nb-V6Z"/>
+                            <constraint firstItem="FeY-Ee-7n4" firstAttribute="leading" secondItem="yIC-1q-OFx" secondAttribute="leading" id="Jzj-Zd-Ctx"/>
+                            <constraint firstItem="FeY-Ee-7n4" firstAttribute="top" secondItem="yIC-1q-OFx" secondAttribute="top" id="Xpv-HI-6I0"/>
+                            <constraint firstItem="H8g-Xo-1eA" firstAttribute="leading" secondItem="yIC-1q-OFx" secondAttribute="leading" id="bFj-3B-AD8"/>
+                            <constraint firstItem="yIC-1q-OFx" firstAttribute="trailing" secondItem="mIU-JR-3N4" secondAttribute="trailing" id="hpB-y5-cnE"/>
+                            <constraint firstItem="yIC-1q-OFx" firstAttribute="bottom" secondItem="mIU-JR-3N4" secondAttribute="bottom" id="krF-nd-exF"/>
+                            <constraint firstItem="yIC-1q-OFx" firstAttribute="trailing" secondItem="FeY-Ee-7n4" secondAttribute="trailing" id="mFx-6I-glS"/>
+                            <constraint firstItem="yIC-1q-OFx" firstAttribute="trailing" secondItem="H8g-Xo-1eA" secondAttribute="trailing" id="qgh-hr-BSY"/>
+                            <constraint firstItem="QKg-3l-Rjc" firstAttribute="leading" secondItem="yIC-1q-OFx" secondAttribute="leading" id="u77-jd-zlX"/>
+                            <constraint firstItem="yIC-1q-OFx" firstAttribute="bottom" secondItem="QKg-3l-Rjc" secondAttribute="bottom" id="vLo-tI-AUm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="카드충전" id="PSu-yV-Xse"/>
+                    <size key="freeformSize" width="414" height="1200"/>
+                    <connections>
+                        <outlet property="amountTop" destination="VP9-kg-Q58" id="SOS-lt-3IF"/>
+                        <outlet property="attentionAspect" destination="Okg-Kg-qjn" id="Jnz-oW-gdC"/>
+                        <outlet property="attentionText" destination="eAz-YB-ee3" id="1yu-7p-CtV"/>
+                        <outlet property="attentionView" destination="21M-Ya-gcJ" id="UX4-pp-iZ0"/>
+                        <outlet property="btn_cancel" destination="xXC-8e-k15" id="bQb-ig-xl9"/>
+                        <outlet property="btn_expend" destination="ElA-ou-SQo" id="dd0-IC-54f"/>
+                        <outlet property="btn_register" destination="xt4-EG-fGn" id="g0F-LS-MoK"/>
+                        <outlet property="btn_setChange" destination="qAQ-W7-HcK" id="K4N-Db-gMI"/>
+                        <outlet property="buttonView" destination="mIU-JR-3N4" id="0ah-mk-Exa"/>
+                        <outlet property="generalBtns" destination="lWc-Qq-f0M" id="J6j-Bq-VdN"/>
+                        <outlet property="input_charging" destination="Qyp-dR-BB9" id="dyN-px-kT2"/>
+                        <outlet property="input_standard" destination="cBW-hf-g4l" id="3Ng-1m-WIW"/>
+                        <outlet property="lineViewTop" destination="oYz-Jt-e0O" id="LiM-UD-I8n"/>
+                        <outlet property="meansTop" destination="0aS-RM-bYk" id="Fib-e7-qqV"/>
+                        <outlet property="selectedImage" destination="dVF-db-rsm" id="lWY-P5-wlP"/>
+                        <outlet property="selectedTitle" destination="zIm-bh-39z" id="HgT-xi-HBW"/>
+                        <outlet property="standardView" destination="VqF-hW-RvX" id="fcZ-vh-7hU"/>
+                        <outletCollection property="typeButtons" destination="LDt-LG-hgV" collectionClass="NSMutableArray" id="ONF-QA-7pt"/>
+                        <outletCollection property="typeButtons" destination="SKM-Yw-nvD" collectionClass="NSMutableArray" id="avm-hd-N6u"/>
+                        <outletCollection property="standardButtons" destination="9hX-RD-Uc0" collectionClass="NSMutableArray" id="tYJ-Cc-ryd"/>
+                        <outletCollection property="standardButtons" destination="wP8-0p-Ri4" collectionClass="NSMutableArray" id="cg2-pV-nFQ"/>
+                        <outletCollection property="standardButtons" destination="scR-SK-Xx6" collectionClass="NSMutableArray" id="7rL-6f-dus"/>
+                        <outletCollection property="standardButtons" destination="RlC-lT-naN" collectionClass="NSMutableArray" id="qfC-7R-VpE"/>
+                        <outletCollection property="standardButtons" destination="LHB-TT-JRO" collectionClass="NSMutableArray" id="76t-zD-rJv"/>
+                        <outletCollection property="standardButtons" destination="bf8-WD-IaM" collectionClass="NSMutableArray" id="DJC-l2-Gro"/>
+                        <outletCollection property="chargingButtons" destination="f4F-TG-qse" collectionClass="NSMutableArray" id="Esh-8o-ceG"/>
+                        <outletCollection property="chargingButtons" destination="44D-hd-gwv" collectionClass="NSMutableArray" id="f2T-6y-Ket"/>
+                        <outletCollection property="chargingButtons" destination="b20-Pf-CDx" collectionClass="NSMutableArray" id="Jfk-wT-y02"/>
+                        <outletCollection property="chargingButtons" destination="PE0-b1-wmP" collectionClass="NSMutableArray" id="3pQ-BX-oHI"/>
+                        <outletCollection property="chargingButtons" destination="oil-q3-mxc" collectionClass="NSMutableArray" id="fFo-vY-IaF"/>
+                        <outletCollection property="chargingButtons" destination="uM4-3b-5Pe" collectionClass="NSMutableArray" id="W8d-du-XUC"/>
+                        <outletCollection property="meansButtons" destination="FP5-8Z-RKl" collectionClass="NSMutableArray" id="HPl-rS-KeB"/>
+                        <segue destination="T3p-Fe-Sdh" kind="show" identifier="payment" id="wSP-Yd-KMO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VSP-Vq-pFx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3563.7681159420295" y="979.6875"/>
+        </scene>
+        <!--Auto Charging Set Alert-->
+        <scene sceneID="UCc-Kf-r0j">
+            <objects>
+                <viewController storyboardIdentifier="AutoChargingSetAlert" id="Aj4-kU-X1Y" customClass="AutoChargingSetAlert" customModule="Dessert39" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5J7-lj-SM7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mBf-yh-sPe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fk0-Vm-5VJ">
+                                <rect key="frame" x="54" y="330.5" width="306" height="235.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dP6-IA-urr">
+                                        <rect key="frame" x="0.0" y="0.0" width="306" height="62"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자동 충전을 설정하시겠습니까?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfJ-CW-Fbi">
+                                                <rect key="frame" x="30" y="20" width="246" height="22"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="18"/>
+                                                <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="TfJ-CW-Fbi" firstAttribute="leading" secondItem="dP6-IA-urr" secondAttribute="leading" constant="30" id="OPC-Ud-w9x"/>
+                                            <constraint firstAttribute="trailing" secondItem="TfJ-CW-Fbi" secondAttribute="trailing" constant="30" id="aRH-1B-jZY"/>
+                                            <constraint firstItem="TfJ-CW-Fbi" firstAttribute="top" secondItem="dP6-IA-urr" secondAttribute="top" constant="20" id="eKe-TM-5Av"/>
+                                            <constraint firstAttribute="bottom" secondItem="TfJ-CW-Fbi" secondAttribute="bottom" constant="20" id="kqk-fh-t5W"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gwI-C5-o6M">
+                                        <rect key="frame" x="20" y="77" width="91" height="78.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기준 잔액" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEG-Jh-VBF">
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="16"/>
+                                                <color key="textColor" red="0.29411764705882354" green="0.29411764705882354" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자동 충전 금액" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2o-xV-KaI">
+                                                <rect key="frame" x="0.0" y="29.5" width="91" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="16"/>
+                                                <color key="textColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결제 수단" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Cg-co-Z0T">
+                                                <rect key="frame" x="0.0" y="59" width="91" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="16"/>
+                                                <color key="textColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0VR-bL-mR0">
+                                        <rect key="frame" x="20" y="185.5" width="266" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0l-ba-XFB">
+                                                <rect key="frame" x="0.0" y="0.0" width="129" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="취소">
+                                                    <color key="titleColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cancelHandler:" destination="Aj4-kU-X1Y" eventType="touchUpInside" id="8eP-4h-Oe3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcp-sf-toi">
+                                                <rect key="frame" x="137" y="0.0" width="129" height="30"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="14"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="확인">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="okHandler:" destination="Aj4-kU-X1Y" eventType="touchUpInside" id="p74-Po-BKV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kks-xl-gTG">
+                                        <rect key="frame" x="231" y="77" width="55" height="71"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10,000원" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgM-Ht-6ke">
+                                                <rect key="frame" x="0.0" y="0.0" width="55" height="17"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                                <color key="textColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10,000원" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GY-UN-fxp">
+                                                <rect key="frame" x="0.0" y="27" width="55" height="17"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                                <color key="textColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신용카드" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdc-vw-QJc">
+                                                <rect key="frame" x="0.0" y="54" width="55" height="17"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                                <color key="textColor" red="0.29411764709999999" green="0.29411764709999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="dP6-IA-urr" firstAttribute="leading" secondItem="Fk0-Vm-5VJ" secondAttribute="leading" id="041-Q8-ke0"/>
+                                    <constraint firstItem="gwI-C5-o6M" firstAttribute="leading" secondItem="Fk0-Vm-5VJ" secondAttribute="leading" constant="20" id="CRI-F1-8T7"/>
+                                    <constraint firstItem="gwI-C5-o6M" firstAttribute="top" secondItem="dP6-IA-urr" secondAttribute="bottom" constant="15" id="E3o-tE-ty7"/>
+                                    <constraint firstAttribute="trailing" secondItem="dP6-IA-urr" secondAttribute="trailing" id="IXm-AY-6iK"/>
+                                    <constraint firstItem="dP6-IA-urr" firstAttribute="top" secondItem="Fk0-Vm-5VJ" secondAttribute="top" id="QhL-9y-j9w"/>
+                                    <constraint firstItem="0VR-bL-mR0" firstAttribute="top" secondItem="gwI-C5-o6M" secondAttribute="bottom" constant="30" id="Qw0-12-0fc"/>
+                                    <constraint firstAttribute="trailing" secondItem="kks-xl-gTG" secondAttribute="trailing" constant="20" id="RAM-ip-1Vf"/>
+                                    <constraint firstItem="0VR-bL-mR0" firstAttribute="leading" secondItem="Fk0-Vm-5VJ" secondAttribute="leading" constant="20" id="RlC-2j-Tsq"/>
+                                    <constraint firstAttribute="trailing" secondItem="0VR-bL-mR0" secondAttribute="trailing" constant="20" id="T9U-uT-vDi"/>
+                                    <constraint firstItem="kks-xl-gTG" firstAttribute="top" secondItem="dP6-IA-urr" secondAttribute="bottom" constant="15" id="Une-AX-3fv"/>
+                                    <constraint firstAttribute="bottom" secondItem="0VR-bL-mR0" secondAttribute="bottom" constant="20" id="zhf-Fm-rDX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fbx-HM-KKJ"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Fbx-HM-KKJ" firstAttribute="trailing" secondItem="Fk0-Vm-5VJ" secondAttribute="trailing" constant="54" id="CF8-wR-8Sb"/>
+                            <constraint firstItem="Fk0-Vm-5VJ" firstAttribute="centerX" secondItem="5J7-lj-SM7" secondAttribute="centerX" id="OrT-Kb-UTd"/>
+                            <constraint firstItem="mBf-yh-sPe" firstAttribute="leading" secondItem="Fbx-HM-KKJ" secondAttribute="leading" id="S9P-R8-Has"/>
+                            <constraint firstItem="mBf-yh-sPe" firstAttribute="top" secondItem="5J7-lj-SM7" secondAttribute="top" id="XOA-92-Rs5"/>
+                            <constraint firstItem="Fbx-HM-KKJ" firstAttribute="trailing" secondItem="mBf-yh-sPe" secondAttribute="trailing" id="eDV-Um-xrW"/>
+                            <constraint firstItem="Fk0-Vm-5VJ" firstAttribute="leading" secondItem="Fbx-HM-KKJ" secondAttribute="leading" constant="54" id="eVe-H1-2s4"/>
+                            <constraint firstAttribute="bottom" secondItem="mBf-yh-sPe" secondAttribute="bottom" id="giI-Nv-ika"/>
+                            <constraint firstItem="Fk0-Vm-5VJ" firstAttribute="centerY" secondItem="5J7-lj-SM7" secondAttribute="centerY" id="ky4-OW-pBb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn_cancel" destination="u0l-ba-XFB" id="iFe-xg-TaE"/>
+                        <outlet property="btn_ok" destination="tcp-sf-toi" id="XgH-7V-aWW"/>
+                        <outlet property="label_means" destination="Rdc-vw-QJc" id="8w3-m4-soh"/>
+                        <outlet property="label_money" destination="6GY-UN-fxp" id="ppZ-L6-UxC"/>
+                        <outlet property="label_standard" destination="zgM-Ht-6ke" id="RoZ-ry-RIa"/>
+                        <outlet property="titleView" destination="dP6-IA-urr" id="WRr-xH-LEh"/>
+                        <outlet property="warpView" destination="Fk0-Vm-5VJ" id="FvJ-zK-uad"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9p2-2H-Sg4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4264" y="879"/>
+        </scene>
+        <!--Auto Charging Cancel Alert-->
+        <scene sceneID="xl9-if-ZVd">
+            <objects>
+                <viewController storyboardIdentifier="AutoChargingCancelAlert" id="BwI-Xb-5ph" customClass="AutoChargingCancelAlert" customModule="Dessert39" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Su9-fq-NLP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xb7-C9-mwR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ccj-nq-mtR" userLabel="warpView">
+                                <rect key="frame" x="91" y="337.5" width="232" height="221.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dly-6b-Cid" userLabel="titleView">
+                                        <rect key="frame" x="0.0" y="0.0" width="232" height="152.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r6d-HT-whN">
+                                                <rect key="frame" x="20" y="94" width="192" height="38.5"/>
+                                                <string key="text">자동 충전 해지 후 
+충전방식을 다시 설정해주세요.</string>
+                                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="16"/>
+                                                <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alert_warning" translatesAutoresizingMaskIntoConstraints="NO" id="ucj-rM-Gi0">
+                                                <rect key="frame" x="96" y="40" width="40" height="37"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="r6d-HT-whN" firstAttribute="leading" secondItem="dly-6b-Cid" secondAttribute="leading" constant="20" id="EsV-6U-2IN"/>
+                                            <constraint firstItem="ucj-rM-Gi0" firstAttribute="top" secondItem="dly-6b-Cid" secondAttribute="top" constant="40" id="WTY-2Z-Gkt"/>
+                                            <constraint firstAttribute="trailing" secondItem="r6d-HT-whN" secondAttribute="trailing" constant="20" id="Zc9-5E-vE7"/>
+                                            <constraint firstItem="r6d-HT-whN" firstAttribute="top" secondItem="ucj-rM-Gi0" secondAttribute="bottom" constant="17" id="icT-pm-d5h"/>
+                                            <constraint firstItem="r6d-HT-whN" firstAttribute="centerX" secondItem="dly-6b-Cid" secondAttribute="centerX" id="ma9-Q3-BxQ"/>
+                                            <constraint firstItem="ucj-rM-Gi0" firstAttribute="centerX" secondItem="dly-6b-Cid" secondAttribute="centerX" id="nqE-pV-duK"/>
+                                            <constraint firstAttribute="bottom" secondItem="r6d-HT-whN" secondAttribute="bottom" constant="20" id="rKr-cq-YqY"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PN7-j2-Sta">
+                                        <rect key="frame" x="20" y="172.5" width="192" height="29"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="14"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="확인">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="okHandler:" destination="BwI-Xb-5ph" eventType="touchUpInside" id="UK4-4I-tRa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dly-6b-Cid" secondAttribute="trailing" id="ZBp-EI-YIW"/>
+                                    <constraint firstItem="dly-6b-Cid" firstAttribute="top" secondItem="Ccj-nq-mtR" secondAttribute="top" id="fGH-z3-YsU"/>
+                                    <constraint firstItem="PN7-j2-Sta" firstAttribute="top" secondItem="dly-6b-Cid" secondAttribute="bottom" constant="20" id="kB5-ox-qnx"/>
+                                    <constraint firstAttribute="bottom" secondItem="PN7-j2-Sta" secondAttribute="bottom" constant="20" id="lc0-bv-3Vg"/>
+                                    <constraint firstAttribute="trailing" secondItem="PN7-j2-Sta" secondAttribute="trailing" constant="20" id="pua-rZ-7ba"/>
+                                    <constraint firstItem="dly-6b-Cid" firstAttribute="leading" secondItem="Ccj-nq-mtR" secondAttribute="leading" id="tED-FU-jHp"/>
+                                    <constraint firstItem="PN7-j2-Sta" firstAttribute="leading" secondItem="Ccj-nq-mtR" secondAttribute="leading" constant="20" id="xgL-B1-Xzh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ETU-p2-498"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ccj-nq-mtR" firstAttribute="centerY" secondItem="Su9-fq-NLP" secondAttribute="centerY" id="6Hm-XD-B54"/>
+                            <constraint firstItem="xb7-C9-mwR" firstAttribute="leading" secondItem="ETU-p2-498" secondAttribute="leading" id="CpJ-RN-fed"/>
+                            <constraint firstAttribute="bottom" secondItem="xb7-C9-mwR" secondAttribute="bottom" id="J2L-8C-GSN"/>
+                            <constraint firstItem="Ccj-nq-mtR" firstAttribute="centerX" secondItem="Su9-fq-NLP" secondAttribute="centerX" id="emw-Hm-ORC"/>
+                            <constraint firstItem="xb7-C9-mwR" firstAttribute="top" secondItem="Su9-fq-NLP" secondAttribute="top" id="gwX-0C-a8L"/>
+                            <constraint firstItem="ETU-p2-498" firstAttribute="trailing" secondItem="xb7-C9-mwR" secondAttribute="trailing" id="lNd-Od-d29"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn_ok" destination="PN7-j2-Sta" id="9GK-XS-hv1"/>
+                        <outlet property="titleView" destination="dly-6b-Cid" id="DAg-OO-PnJ"/>
+                        <outlet property="warpView" destination="Ccj-nq-mtR" id="26E-Nv-66L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CgI-bw-DqE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2871.0144927536235" y="878.57142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="swl-uF-GXc">
+            <objects>
+                <navigationController storyboardIdentifier="CardNavigation" automaticallyAdjustsScrollViewInsets="NO" id="u3w-1d-ogz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lra-Ux-uMV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="XeS-s5-ygL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ciF-nD-bv2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2414" y="143"/>
+        </scene>
+        <!--카드충전-->
+        <scene sceneID="GLI-se-SSB">
+            <objects>
+                <viewController storyboardIdentifier="Payment" id="T3p-Fe-Sdh" customClass="Payment" customModule="Dessert39" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HEU-sB-Kcp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aES-vu-BhF">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jnv-ru-U9K"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aES-vu-BhF" firstAttribute="leading" secondItem="jnv-ru-U9K" secondAttribute="leading" id="24x-At-pRR"/>
+                            <constraint firstItem="jnv-ru-U9K" firstAttribute="bottom" secondItem="aES-vu-BhF" secondAttribute="bottom" id="DrF-sU-Nwk"/>
+                            <constraint firstItem="aES-vu-BhF" firstAttribute="top" secondItem="jnv-ru-U9K" secondAttribute="top" id="aCs-cO-jlu"/>
+                            <constraint firstItem="jnv-ru-U9K" firstAttribute="trailing" secondItem="aES-vu-BhF" secondAttribute="trailing" id="i1Y-ja-hsi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="카드충전" id="1VY-XN-ULN"/>
+                    <connections>
+                        <outlet property="backView" destination="aES-vu-BhF" id="rGO-GW-ho8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UTC-g6-Ugh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3565" y="1761"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="E1z-IR-Ogy"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="alert_warning" width="40" height="36.5"/>
+        <image name="card_add" width="33" height="33"/>
+        <image name="icon_plus" width="16.5" height="16.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-SemiBold.ttf">
+            <string>Pretendard-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderListDetailFooter" customModule="Dessert39" customModuleProvider="target">
+            <connections>
+                <outlet property="btn_review" destination="F3v-O9-hEQ" id="7C8-KV-4Y4"/>
+                <outlet property="grayView" destination="spP-JA-8iE" id="8ji-mm-wdg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spP-JA-8iE">
+                    <rect key="frame" x="20" y="0.0" width="374" height="5"/>
+                    <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="Bd7-Rf-F55"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3v-O9-hEQ">
+                    <rect key="frame" x="20" y="25" width="374" height="47"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="F3v-O9-hEQ" secondAttribute="height" multiplier="335:42" id="436-AF-Uvc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="15"/>
+                    <state key="normal" title="후기 작성하기 (3일 이내)">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="spP-JA-8iE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="h7F-6K-aB4"/>
+                <constraint firstAttribute="trailing" secondItem="F3v-O9-hEQ" secondAttribute="trailing" constant="20" id="kO0-dV-HFG"/>
+                <constraint firstAttribute="trailing" secondItem="spP-JA-8iE" secondAttribute="trailing" constant="20" id="m0G-sa-lgY"/>
+                <constraint firstItem="spP-JA-8iE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oQJ-cn-gtE"/>
+                <constraint firstItem="F3v-O9-hEQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="ucB-ue-T5G"/>
+                <constraint firstItem="F3v-O9-hEQ" firstAttribute="top" secondItem="spP-JA-8iE" secondAttribute="bottom" constant="20" id="wrj-Np-ywK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="-136.94196428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

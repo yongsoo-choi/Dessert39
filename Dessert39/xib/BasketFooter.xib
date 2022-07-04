@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Bold.ttf">
+            <string>Pretendard-Bold</string>
+        </array>
+        <array key="Pretendard-Medium.ttf">
+            <string>Pretendard-Medium</string>
+        </array>
+        <array key="Pretendard-SemiBold.ttf">
+            <string>Pretendard-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BasketFooter" customModule="Dessert39" customModuleProvider="target">
+            <connections>
+                <outlet property="btn_expend" destination="LtA-9h-BtF" id="ubj-Dp-hbE"/>
+                <outlet property="couponTF" destination="DRg-xI-ZaW" id="XP7-fO-OiK"/>
+                <outlet property="grayView" destination="eTP-7z-dRE" id="SLW-w9-ymM"/>
+                <outlet property="lineView" destination="jYY-29-qZo" id="Png-EV-kZQ"/>
+                <outlet property="textLabel" destination="rDg-J3-0H2" id="DJi-Kb-fAQ"/>
+                <outlet property="tf_request" destination="abl-gj-RqK" id="YdX-N1-Mec"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="590"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주문 요청사항" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZ9-9r-bg1">
+                    <rect key="frame" x="20" y="121" width="98" height="22"/>
+                    <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="18"/>
+                    <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="752" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="요청사항을 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="abl-gj-RqK">
+                    <rect key="frame" x="20" y="158" width="374" height="34"/>
+                    <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="주문 시 유의사항" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvl-Pd-7on">
+                    <rect key="frame" x="20" y="222" width="117.5" height="22"/>
+                    <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="18"/>
+                    <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eTP-7z-dRE">
+                    <rect key="frame" x="20" y="264" width="374" height="232.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="주문 시 유의사항을 확인해 주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x93-31-6gY">
+                            <rect key="frame" x="15" y="13" width="187" height="17"/>
+                            <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="14"/>
+                            <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jYY-29-qZo">
+                            <rect key="frame" x="15" y="45" width="344" height="1"/>
+                            <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="baK-KV-FZg"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDg-J3-0H2">
+                            <rect key="frame" x="15" y="35" width="344" height="187.5"/>
+                            <string key="text">
+
+- 디저트39 오더 이용 시, 주문을 완료한 후에는 매장에서 픽업 가능 시간이 알림으로 전달됩니다.
+
+- 픽업 가능 시간 확인 후 결제 완료를 진행하지 않으시면 픽업 가능 시간 알림 전달 5분 후에는 자동으로 주문이 취소됩니다. 
+
+- 픽업 가능 시간을 확인하신 후 결제 완료를 하시면 매장에서 제조를 시작하며, 주문 변경/전체 취소/부분 취소가 불가능합니다.
+
+- 매장 사정으로 인해 제품의 재고가 없거나 부족할 경우, 매장 혼잡으로 인해 주문이 취소될 수 있으며 알림으로 전달됩니다.</string>
+                            <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="12"/>
+                            <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LtA-9h-BtF">
+                            <rect key="frame" x="328" y="8" width="31" height="27"/>
+                            <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="12"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="⌵ 접기">
+                                <color key="titleColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="expendAction:" destination="-1" eventType="touchUpInside" id="5mQ-jk-7Mo"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="x93-31-6gY" firstAttribute="top" secondItem="eTP-7z-dRE" secondAttribute="top" constant="13" id="82e-aO-SQv"/>
+                        <constraint firstItem="rDg-J3-0H2" firstAttribute="leading" secondItem="eTP-7z-dRE" secondAttribute="leading" constant="15" id="IY6-bC-5tx"/>
+                        <constraint firstAttribute="trailing" secondItem="LtA-9h-BtF" secondAttribute="trailing" constant="15" id="Tgd-t3-LDo"/>
+                        <constraint firstItem="jYY-29-qZo" firstAttribute="leading" secondItem="eTP-7z-dRE" secondAttribute="leading" constant="15" id="VNi-LH-Gfo"/>
+                        <constraint firstAttribute="trailing" secondItem="rDg-J3-0H2" secondAttribute="trailing" constant="15" id="W3g-6S-oYo"/>
+                        <constraint firstAttribute="bottom" secondItem="rDg-J3-0H2" secondAttribute="bottom" constant="10" id="aQS-Ly-Byb"/>
+                        <constraint firstItem="rDg-J3-0H2" firstAttribute="top" secondItem="jYY-29-qZo" secondAttribute="bottom" constant="-11" id="bIm-OS-PlL"/>
+                        <constraint firstItem="x93-31-6gY" firstAttribute="leading" secondItem="eTP-7z-dRE" secondAttribute="leading" constant="15" id="fT5-wL-isp"/>
+                        <constraint firstAttribute="trailing" secondItem="jYY-29-qZo" secondAttribute="trailing" constant="15" id="mbL-tF-wqr"/>
+                        <constraint firstItem="jYY-29-qZo" firstAttribute="top" secondItem="x93-31-6gY" secondAttribute="bottom" constant="15" id="nc7-51-RlQ"/>
+                        <constraint firstItem="LtA-9h-BtF" firstAttribute="centerY" secondItem="x93-31-6gY" secondAttribute="centerY" id="sxu-0s-4RL"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="쿠폰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCG-Rn-3i8">
+                    <rect key="frame" x="20" y="20" width="32" height="22"/>
+                    <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="18"/>
+                    <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="752" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="쿠폰을 선택하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DRg-xI-ZaW">
+                    <rect key="frame" x="20" y="57" width="374" height="34"/>
+                    <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="8RH-I5-Dvi">
+                    <rect key="frame" x="378" y="69" width="6" height="10"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="eTP-7z-dRE" firstAttribute="top" secondItem="tvl-Pd-7on" secondAttribute="bottom" constant="20" id="0eV-hW-NQG"/>
+                <constraint firstItem="DRg-xI-ZaW" firstAttribute="top" secondItem="XCG-Rn-3i8" secondAttribute="bottom" constant="15" id="1ES-cC-GjH"/>
+                <constraint firstItem="bZ9-9r-bg1" firstAttribute="top" secondItem="DRg-xI-ZaW" secondAttribute="bottom" constant="30" id="2oA-iP-Pr2"/>
+                <constraint firstItem="tvl-Pd-7on" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="73D-E0-jQZ"/>
+                <constraint firstAttribute="trailing" secondItem="eTP-7z-dRE" secondAttribute="trailing" constant="20" id="Ca9-bE-CG2"/>
+                <constraint firstItem="XCG-Rn-3i8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="FOW-ee-Y7H"/>
+                <constraint firstItem="eTP-7z-dRE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="J9L-tZ-ch0"/>
+                <constraint firstItem="8RH-I5-Dvi" firstAttribute="centerY" secondItem="DRg-xI-ZaW" secondAttribute="centerY" id="MsS-lb-92X"/>
+                <constraint firstItem="abl-gj-RqK" firstAttribute="top" secondItem="bZ9-9r-bg1" secondAttribute="bottom" constant="15" id="Neh-Xz-dPZ"/>
+                <constraint firstAttribute="trailing" secondItem="abl-gj-RqK" secondAttribute="trailing" constant="20" id="OeE-4p-JMo"/>
+                <constraint firstItem="XCG-Rn-3i8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="TH3-bG-aCX"/>
+                <constraint firstItem="abl-gj-RqK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="W4X-ic-Y2K"/>
+                <constraint firstItem="tvl-Pd-7on" firstAttribute="top" secondItem="abl-gj-RqK" secondAttribute="bottom" constant="30" id="bxh-Kc-IZB"/>
+                <constraint firstItem="DRg-xI-ZaW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="iPr-Sp-NBF"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="eTP-7z-dRE" secondAttribute="bottom" constant="20" id="mfa-eM-Yrk"/>
+                <constraint firstItem="8RH-I5-Dvi" firstAttribute="trailing" secondItem="DRg-xI-ZaW" secondAttribute="trailing" constant="-10" id="oxs-Uh-vld"/>
+                <constraint firstItem="bZ9-9r-bg1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="uP7-sV-VAM"/>
+                <constraint firstAttribute="trailing" secondItem="DRg-xI-ZaW" secondAttribute="trailing" constant="20" id="weC-Bp-Y75"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="363.768115942029" y="-23.4375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_arrow" width="5.5" height="9.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Regular.ttf">
+            <string>Pretendard-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Agreement" customModule="Dessert39" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="이용약관" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="shz-4r-W8l">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="shz-4r-W8l" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5oI-oJ-GFP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="shz-4r-W8l" secondAttribute="trailing" id="R9g-Bb-xJ0"/>
+                <constraint firstItem="shz-4r-W8l" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="qrH-My-orf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="shz-4r-W8l" secondAttribute="bottom" id="z6u-l3-W8Q"/>
+            </constraints>
+            <point key="canvasLocation" x="-593" y="25"/>
+        </view>
+        <view contentMode="scaleToFill" id="inQ-tp-8Qj" customClass="Agreement" customModule="Dessert39" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="개인정보 수집 동의" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="r34-dG-uM5">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="gew-Oe-Bp8"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="gew-Oe-Bp8" firstAttribute="trailing" secondItem="r34-dG-uM5" secondAttribute="trailing" id="Bj7-gF-dUh"/>
+                <constraint firstItem="gew-Oe-Bp8" firstAttribute="bottom" secondItem="r34-dG-uM5" secondAttribute="bottom" id="mhw-5P-GOc"/>
+                <constraint firstItem="r34-dG-uM5" firstAttribute="leading" secondItem="gew-Oe-Bp8" secondAttribute="leading" id="nFe-Eq-kDc"/>
+                <constraint firstItem="r34-dG-uM5" firstAttribute="top" secondItem="gew-Oe-Bp8" secondAttribute="top" id="zFk-Sc-kXh"/>
+            </constraints>
+            <point key="canvasLocation" x="165" y="25"/>
+        </view>
+        <view contentMode="scaleToFill" id="i3H-wI-y7T" customClass="Agreement" customModule="Dessert39" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="선불카드 이용약관" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="it6-YL-1cz">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="tfw-Gj-Syr"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="it6-YL-1cz" firstAttribute="leading" secondItem="tfw-Gj-Syr" secondAttribute="leading" id="W22-1T-Ssa"/>
+                <constraint firstItem="it6-YL-1cz" firstAttribute="top" secondItem="tfw-Gj-Syr" secondAttribute="top" id="aVG-KV-8WX"/>
+                <constraint firstItem="tfw-Gj-Syr" firstAttribute="bottom" secondItem="it6-YL-1cz" secondAttribute="bottom" id="npa-NJ-1GB"/>
+                <constraint firstItem="tfw-Gj-Syr" firstAttribute="trailing" secondItem="it6-YL-1cz" secondAttribute="trailing" id="qdF-zf-2bn"/>
+            </constraints>
+            <point key="canvasLocation" x="919" y="25"/>
+        </view>
+        <view contentMode="scaleToFill" id="8ri-Zp-izD" customClass="Agreement" customModule="Dessert39" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="위치기반 서비스 이용약관" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bfl-Lt-0lR">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="e23-4P-pYM"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="bfl-Lt-0lR" firstAttribute="leading" secondItem="e23-4P-pYM" secondAttribute="leading" id="0Uq-da-m12"/>
+                <constraint firstItem="bfl-Lt-0lR" firstAttribute="top" secondItem="e23-4P-pYM" secondAttribute="top" id="fIB-8C-3hI"/>
+                <constraint firstItem="e23-4P-pYM" firstAttribute="bottom" secondItem="bfl-Lt-0lR" secondAttribute="bottom" id="oN6-7q-yJm"/>
+                <constraint firstItem="e23-4P-pYM" firstAttribute="trailing" secondItem="bfl-Lt-0lR" secondAttribute="trailing" id="ofo-7j-ULU"/>
+            </constraints>
+            <point key="canvasLocation" x="1674" y="25"/>
+        </view>
+        <view contentMode="scaleToFill" id="pg5-bg-KnX" customClass="Agreement" customModule="Dessert39" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="마케팅 수신 동의" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u0X-eS-f90">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="EMM-WD-wpw"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="EMM-WD-wpw" firstAttribute="bottom" secondItem="u0X-eS-f90" secondAttribute="bottom" id="3N7-TF-OPa"/>
+                <constraint firstItem="u0X-eS-f90" firstAttribute="leading" secondItem="EMM-WD-wpw" secondAttribute="leading" id="cEu-M4-ONe"/>
+                <constraint firstItem="EMM-WD-wpw" firstAttribute="trailing" secondItem="u0X-eS-f90" secondAttribute="trailing" id="ceo-Vf-lvQ"/>
+                <constraint firstItem="u0X-eS-f90" firstAttribute="top" secondItem="EMM-WD-wpw" secondAttribute="top" id="s1R-S7-YfS"/>
+            </constraints>
+            <point key="canvasLocation" x="2416" y="25"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
